@@ -6,8 +6,10 @@ import edu.nsbm.noir.repository.PaymentRepository;
 import edu.nsbm.noir.service.PaymentService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
 
 @RequiredArgsConstructor
+@Service
 public class PaymentSeviceImpl implements PaymentService {
     final PaymentRepository paymentRepository;
     final ModelMapper modelMapper;

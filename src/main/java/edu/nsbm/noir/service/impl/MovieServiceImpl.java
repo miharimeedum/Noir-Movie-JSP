@@ -6,10 +6,12 @@ import edu.nsbm.noir.repository.MovieRepository;
 import edu.nsbm.noir.service.MovieService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 @RequiredArgsConstructor
+@Service
 public class MovieServiceImpl implements MovieService {
     final MovieRepository movieRepository;
     final ModelMapper modelMapper;

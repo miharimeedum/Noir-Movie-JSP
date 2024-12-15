@@ -6,9 +6,11 @@ import edu.nsbm.noir.repository.HallRepository;
 import edu.nsbm.noir.service.HallSevice;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 @RequiredArgsConstructor
+@Service
 public class HallServiceImpl implements HallSevice {
     final HallRepository hallRepository;
     final ModelMapper modelMapper;

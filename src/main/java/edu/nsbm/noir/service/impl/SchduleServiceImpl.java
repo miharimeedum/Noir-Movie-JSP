@@ -6,10 +6,12 @@ import edu.nsbm.noir.repository.SchduleRepository;
 import edu.nsbm.noir.service.SchduleService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 @RequiredArgsConstructor
+@Service
 public class SchduleServiceImpl implements SchduleService {
     final SchduleRepository schduleRepository;
     final ModelMapper modelMapper;
