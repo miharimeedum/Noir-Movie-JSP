@@ -6,10 +6,12 @@ import edu.nsbm.noir.repository.CoustomerRepository;
 import edu.nsbm.noir.service.CoustomerService;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 @RequiredArgsConstructor
+@Service
 public class CoustomerServiceImpl implements CoustomerService {
     final CoustomerRepository coustomerRepository;
     final ModelMapper modelMapper;
