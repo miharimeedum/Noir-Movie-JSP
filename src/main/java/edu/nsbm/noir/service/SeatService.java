@@ -10,4 +10,5 @@ public interface SeatService {
     void updateSeat(Seat seat);
     Seat getSeat(Integer id);
     List<Seat> getSeats();
+    List<Seat> getAvableSeats();
 }
